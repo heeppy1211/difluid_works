@@ -119,6 +119,8 @@ html .main .container .conts {
 .sec02 {
   padding: 15.2rem 8rem;
   background-color: #000;
+  background-size: cover;
+  background-position: center;
 }
 .sec02 .h2 {
   font-weight: bold;
