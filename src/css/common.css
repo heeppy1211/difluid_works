@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+/** reset **/
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
+  cursor: default;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+html, body {
+  height: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**공통**/
+html {
+  font-size: 62.5%;
+}
+html .main {
+  background-color: hsl(0, 0%, 100%);
+}
+html .main .container {
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.8rem;
+}
+html .main .container .h1 {
+  font-size: 4.8rem;
+  font-weight: normal;
+  line-height: 7.2rem;
+  letter-spacing: -0.072rem;
+}
+html .main .container .h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 3.6rem;
+  letter-spacing: -0.036rem;
+}
+html .main .container .conts {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: -0.027rem;
+}
+
+.sec01 {
+  color: #000;
+  padding: 12rem 8rem 11rem;
+  text-align: left;
+}
+.sec01 .profile-list {
+  display: flex;
+  margin-top: 7rem;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.sec01 .profile-list .item .profile-img {
+  width: 10.8rem;
+}
+.sec01 .profile-list .item .profile-conts {
+  margin-top: 4rem;
+}
+.sec01 .profile-list .item .profile-conts .h2 {
+  font-weight: bold;
+  color: #000;
+}
+.sec01 .profile-list .item .profile-conts .conts {
+  margin-top: 2.4rem;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  white-space: pre-wrap;
+}
+.sec01 .profile-list .item .profile-conts .link-btn {
+  display: inline-block;
+  margin-top: 2.4rem;
+  color: #18a0fb;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -0.027rem;
+}
+.sec02 {
+  padding: 15.2rem 8rem;
+  background-color: #000;
+}
+.sec02 .h2 {
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+.sec02 .conts {
+  margin-top: 2.4rem;
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.sec02 .sub {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  letter-spacing: -0.021rem;
+  opacity: 0.5;
+}
+.sec02 .sub::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 3.2rem 0;
+}
+.sec02 .newsletter-wrap {
+  margin-top: 9.5rem;
+  text-align: center;
+}
+.sec02 .newsletter-wrap .h3 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: -0.024rem;
+}
+.sec02 .newsletter-wrap .h3 + form {
+  display: inline-block;
+  margin-top: 1.6rem;
+  text-align: center;
+  width: 100%;
+  max-width: 50rem;
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container {
+  width: 100%;
+  text-align: center;
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap {
+  display: inline-block;
+  width: 100%;
+  height: 5rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 7px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap .email-input {
+  width: 100%;
+  height: calc(100% - 2px);
+  background-color: transparent;
+  border: 0;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: -0.024rem;
+  padding-left: 20px;
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap .email-input::-moz-placeholder {
+  color: hsl(0, 0%, 100%);
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap .email-input::placeholder {
+  color: hsl(0, 0%, 100%);
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap .email-input:focus {
+  outline: 0;
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap .send-btn {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  margin-top: -1.6rem;
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap.is-err {
+  border-color: #ff6633;
+  animation: vibration 0.1s 3;
+}
+@keyframes vibration {
+  from {
+    transform: rotate(0.5deg);
+  }
+  to {
+    transform: rotate(-0.5deg);
+  }
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap.is-err .text-err {
+  display: block;
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap.is-err .send-btn {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap.is-pass {
+  border-color: #00c300;
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .text-err {
+  display: none;
+  color: #ff6633;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  margin-top: 1.3rem;
+  padding-left: 1.6rem;
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  html {
+    font-size: 50%;
+  }
+  .profile-list {
+    display: block !important;
+    margin-top: 10rem !important;
+  }
+  .profile-list .item {
+    text-align: center;
+  }
+  .profile-list .item img {
+    margin: 0 auto;
+  }
+  .profile-list .item + .item {
+    margin-top: 10rem;
+  }
+}/*# sourceMappingURL=common.css.map */
